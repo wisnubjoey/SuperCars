@@ -423,17 +423,19 @@ section.About {
     margin-right: auto;
     margin-top: 100px;
 }
-.product-container{
+.product-container {
     display: flex;
     overflow-x: scroll;
     gap: 2rem;
     margin-top: 2rem;
     padding: 2rem 7% 3rem;
     scroll-behavior: smooth;
+    cursor: grab; /* Menambahkan cursor grab untuk indikasi bisa di-drag */
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-    scrollbar-color: var(--main-color) rgba(255, 255, 255, 0.1);
-    overflow-y: visible;
+    
+    /* Sembunyikan scrollbar tapi tetap bisa scroll */
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer/Edge */
 }
 
 .product-container::-webkit-scrollbar {
@@ -676,6 +678,7 @@ section.About {
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    text-align: center; /* Menambahkan text-align center */
 }
 
 .car:hover {
@@ -685,9 +688,10 @@ section.About {
 
 .car i, .car h2, .car p {
     padding: 0 30px; /* Tambahkan padding untuk konten text */
+    text-align: center; /* Menambahkan text-align center */
 }
 .car h2{
-    margin-bottom: 12px;
+    margin-bottom: 15px; /* Tambahkan margin bottom untuk jarak antara judul dan paragraf */
     font-weight: 400;
     text-align: center;
     transition: all 0.3s ease;
@@ -714,6 +718,8 @@ section.About {
 .car p {
     margin-bottom: 20px;
     color: black; /* Tambahkan margin bawah untuk paragraf */
+    text-align: center;
+    line-height: 1.6; /* Menambahkan line-height untuk readability yang lebih baik */
 }
 
 .car h2{
@@ -721,12 +727,13 @@ section.About {
 }
 
 .car i {
-    margin-top: 20px; /* Tambahkan margin atas untuk ikon */
+    margin: 20px auto; /* Margin auto untuk centering horizontal */
     transition: all 0.3s ease;
     background: rgb(164, 19, 19);
     padding: 15px;
     border-radius: 50%;
     color: white;
+    display: block; /* Memastikan ikon berada di tengah */
 }
 
 .car:hover i {
@@ -2071,10 +2078,12 @@ footer {
     margin-top: 2rem;
     padding: 2rem 7% 3rem;
     scroll-behavior: smooth;
+    cursor: grab; /* Menambahkan cursor grab untuk indikasi bisa di-drag */
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: thin;
-    scrollbar-color: var(--main-color) rgba(255, 255, 255, 0.1);
-    overflow-y: visible;
+    
+    /* Sembunyikan scrollbar tapi tetap bisa scroll */
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer/Edge */
 }
 
 /* Styling scrollbar */
