@@ -27,7 +27,16 @@
 
         <ul class="nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="all-product.html">Cars</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-trigger">Cars <i class='bx bx-chevron-down'></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="limited-supercars.html">All Super Cars</a></li>
+                    <li><a href="car-brand-prduct/Ferarri/all-ferrari.html">Ferrari</a></li>
+                    <li><a href="#">Lamborghini</a></li>
+                    <li><a href="#">Porsche</a></li>
+                    <li><a href="#">McLaren</a></li>
+                </ul>
+            </li>
             <li><a href="showroom.html">Showroom</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -50,9 +59,9 @@
                         <h1>- Speed increase</h1>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum laborum quia commodi quas rem reiciendis repudiandae beatae fugiat pariatur dicta!</p>
                         <div class="main-About">
-                            <a href="#" class="btn"><span>Info Cars</span></a>
+                            <a href="#" class="btn"><span>View Details</span></a>
                             <a href="#" class="price">
-                                $190.00 | <span class="price-text">Regular Price</span>
+                                $190.00 | <span class="price-text">Good Price</span>
                             </a>
                         </div>
                     </div>
@@ -68,7 +77,7 @@
                         <div class="main-About">
                             <a href="#" class="btn">View Details</a>
                             <a href="#" class="price">
-                                $250.00 | <span>Premium Price</span>
+                                $250.00 | <span>Good Price</span>
                             </a>
                         </div>
                     </div>
@@ -82,9 +91,9 @@
                         <h1>- Power Unleashed</h1>
                         <p>Experience raw power and precision engineering in our high-performance supercar collection.</p>
                         <div class="main-About">
-                            <a href="#" class="btn">Explore More</a>
+                            <a href="#" class="btn">View Details</a>
                             <a href="#" class="price">
-                                $300.00 | <span>Elite Price</span>
+                                $300.00 | <span>Good Price</span>
                             </a>
                         </div>
                     </div>
@@ -119,18 +128,64 @@
      <!-- Product -->
      <section class="product" id="product">
         <div class="head">
-            <h1>Browse our <span>Limited Super cars</span></h1>
-              <a href="all-product.html" class="btn">See all <i class="bx bx-right-arrow-alt"></i></a>
+            <h1>Browse our <span>Super Cars</span></h1>
+              <a href="limited-supercars.html" class="btn">See all <i class="bx bx-right-arrow-alt"></i></a>
         </div>
      </section>
      
      <!-- Product container -->
       <div class="product-container">
 
-        <a href="all-product.html" class="box-link">
+        <a href="car-brand-prduct/Ferarri/details/Ferrari-458.html" class="box-link">
             <div class="box box3">
                 <img src="images/mobil_3.png">
-                <h2>Ferrari Fortofino</h2>
+                <h2>Ferrari 458 Italia</h2>
+                <div class="price">  
+                    <span class="currency">$</span>
+                    <span class="amount">324,999</span>
+                </div>
+                <div class="box-details">
+                    <div class="info-columns">
+                        <div class="info-left">
+                            <p>V8 Engine</p>
+                            <p>8-Speed Auto</p>
+                        </div>
+                        <div class="info-right">
+                            <p>720 HP</p>
+                            <p>3.2s 0-60</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="car-brand-prduct/Lamborghini/details/Veneno.html" class="box-link">
+            <div class="box box3">
+                <img src="images/Lamborghini/VenenoCrop.png">
+                <h2>Lamborghini Veneno</h2>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">289,999</span>
+                </div>
+                <div class="box-details">
+                    <div class="info-columns">
+                        <div class="info-left">
+                            <p>V12 Engine</p>
+                            <p>7-Speed Auto</p>
+                        </div>
+                        <div class="info-right">
+                            <p>720 HP</p>
+                            <p>3.2s 0-60</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="car-brand-prduct/Porsche/details/911-GT2-RS.html" class="box-link">
+            <div class="box box3">
+                <img src="images/Porsche/porschecrop.png">
+                <h2>Porsche 911 GT2 RS</h2>
                 <div class="price">
                     <span class="currency">$</span>
                     <span class="amount">324,999</span>
@@ -150,10 +205,10 @@
             </div>
         </a>
 
-        <a href="all-product.html" class="box-link">
+        <a href="car-brand-prduct/McLaren/details/765-LT.html" class="box-link">
             <div class="box box3">
-                <img src="images/mobil_3.png">
-                <h2>Ferrari Fortofino</h2>
+                <img src="images/McLaren/Mclaren765crop.png">
+                <h2>McLaren 765 LT</h2>
                 <div class="price">
                     <span class="currency">$</span>
                     <span class="amount">324,999</span>
@@ -173,10 +228,10 @@
             </div>
         </a>
 
-        <a href="all-product.html" class="box-link">
+        <a href="car-brand-prduct/Ferarri/details/sf90.html" class="box-link">
             <div class="box box3">
-                <img src="images/mobil_3.png">
-                <h2>Ferrari Fortofino</h2>
+                <img src="images/Ferrari/FerrariSF90crop.png">
+                <h2>Ferrari SF90</h2>
                 <div class="price">
                     <span class="currency">$</span>
                     <span class="amount">324,999</span>
@@ -223,33 +278,36 @@
       <section class="product" id="product">
         <div class="head">
             <h1>Browse our <span>Cars Brand</span></h1>
-              <a href="all-product.html" class="btn">See all <i class="bx bx-right-arrow-alt"></i></a>
         </div>
     </section>
 
       <div class="product-container">
+
+        <a href="car-brand-prduct/Ferarri/all-ferrari.html" class="box-link">
         <div class="box box1">
             <img src="logo/brand/ferrari.png">
             <h2>Ferrari</h2>
             <span>7 Cars Available</span>
             
         </div>
+        </a>
+
                 <div class="box box2">
-                    <img src="images/mobil_3.png">
-                    <h2>Super Cars</h2>
-                    <span>7 Item</span>
+                    <img src="logo/brand/lamborghini.png">
+                    <h2>Lamborghini</h2>
+                    <span>4 Cars Available</span>
                     
                 </div>
                     <div class="box box3">
-                        <img src="images/mobil_4.png">
-                        <h2>Super Cars</h2>
-                        <span>7 Item</span>
+                        <img src="logo/brand/mclaren.png">
+                        <h2>McLaren</h2>
+                        <span>2 Cars Available</span>
                         
                     </div>
                         <div class="box box4">
-                            <img src="images/mobil_5.png">
-                            <h2>Super Cars</h2>
-                            <span>7 Item</span>
+                            <img src="logo/brand/porsche.png">
+                            <h2>Porsche</h2>
+                            <span>2 Cars Available</span>
                             
                         </div>
   </div>
@@ -294,15 +352,15 @@
     <div class="social-icons">
         <div class="social-icon-container">
             <a href="#" class="social-icon"><i class="bx bxl-youtube"></i></a>
-            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, animi.</span>
+            
         </div>
         <div class="social-icon-container">
             <a href="#" class="social-icon"><i class="bx bxl-facebook"></i></a>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, enim.</span>
+            
         </div>
         <div class="social-icon-container">
             <a href="#" class="social-icon"><i class="bx bx-credit-card"></i></a>
-            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptate.</span>
+            
         </div>
     </div>
     
@@ -390,7 +448,7 @@
 <footer>
     <div class="footer-content">
         <div class="footer-section">
-            <img src="logo/logo.png" alt="Logo" class="footer-logo">
+            <img src="logo/logo2.png" alt="Logo" class="footer-logo">
             <p>Experience performance with our exclusive collection of supercars.</p>
             <div class="social-links">
                 <a href="#"><i class='bx bxl-facebook'></i></a>
